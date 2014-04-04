@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <integer name="max_temperature">40</integer>
+    <integer name="max_humidity">99</integer>
+    <integer name="max_refresh_intervals_min">30</integer>
+    <integer name="min_temperature">4</integer>
+    <integer name="min_humidity">30</integer>
+    <integer name="min_refresh_intervals_min">1</integer>
+    <integer name="default_temperature">25</integer>
+    <integer name="default_humidity">70</integer>
+    <integer name="default_refresh_intervals">300</integer>
+</resources>

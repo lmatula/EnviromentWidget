@@ -1,0 +1,41 @@
+<resources>
+
+    <string name="app_name">EnviromentWidget</string>
+    <string name="widget_text">Wait for data...</string>
+    <string name="DefaultHumidity">0%</string>
+    <string name="DefaultTemperature">0°C</string>
+    <string name="DefaultLastUpdate">Never</string>
+    <string name="DefaultTheme">light</string>
+    <string-array name="theme">
+        <item>Sőtét</item>
+        <item>Világos</item>
+    </string-array>
+    <string name="updateInterval">Frissítési időköz</string>
+    <string name="updateIntervalTitle">Frissítési időköz</string>
+    <string name="updateInterval_msg">Az adatok %1$s percenként frissülnek.</string>
+    <string name="theme">Téma</string>
+    <string name="themeTitle">Téma</string>
+    <string name="theme_msg">%1$s a Widget téma.</string>
+    <string name="temp_low_thersold">Alacsony hömérséklet riasztás</string>
+    <string name="temp_low_thersold_title">Alacsony hömérséklet riasztás</string>
+    <string name="temp_low_thersold_val">%1$d°C</string>
+    <string name="temp_low_thersold_msg">Riasztás %1$d°C alat.</string>
+    <string name="temp_low_thersold_notifi_title">Hőmérséklet %1$d°C alat!</string>
+    <string name="temp_low_thersold_notifi_value">%1$s°C a hömérséklet.</string>
+    <string name="hum_high_thershold">Magas páratartalom riasztás</string>
+    <string name="hum_high_thershold_val">%1$d%%</string>
+    <string name="hum_high_thershold_msg">Riasztás %1$d%% relatív páratartalom felet.</string>
+    <string name="hum_high_thershold_notify_title">Páratartalom átlépte a %1$d%%-t</string>
+    <string name="hum_high_thershold_notify_value">A páratartalom %1$s%%</string>
+    <string name="saveButton">Mentés</string>
+    <string name="okButton">Ok</string>
+    <string name="cancelButton">Mégse</string>
+    <string name="service_name">Enviroment Widget updater service</string>
+    <string-array name="refresh_interval">
+        <item>1 perc</item>
+        <item>5 perc</item>
+        <item>15 perc</item>
+        <item>30 perc</item>
+        <item>Soha</item>
+    </string-array>
+</resources>

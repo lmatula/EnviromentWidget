@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="wbigtext">24sp</dimen>
+    <dimen name="paddinglefttemp">5sp</dimen>
+    <dimen name="paddinfrighttemp">5sp</dimen>
+    <dimen name="mini">8sp</dimen>
+    <dimen name="seek_padding">10sp</dimen>
+</resources>

@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout 
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="match_parent"
+    android:layout_gravity="center"
+    android:background="@drawable/appwidget_dark_bg"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical" >
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal" >
+
+			<ImageView
+			    android:id="@+id/tempicon"
+			    android:layout_width="wrap_content"
+			    android:layout_height="match_parent"
+			    android:layout_gravity="center"
+			    android:adjustViewBounds="true"
+			    android:gravity="center"
+			    android:maxHeight="@dimen/wbigtext"
+			    android:paddingLeft="@dimen/paddinglefttemp"
+			    android:paddingRight="@dimen/paddinglefttemp"
+			    android:scaleType="fitCenter"
+			    android:src="@drawable/temp_icon_dark" />
+
+            <TextView
+                android:id="@+id/tempval"
+                style="@style/MainValDark"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_gravity="center"
+                android:fontFamily="sans-serif-light"
+                android:gravity="right|center"
+                android:text="@string/DefaultTemperature" />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:orientation="vertical" >
+
+	            <TextView
+	                android:id="@+id/maxtemp"
+	                style="@style/HighTextDark"
+	                android:layout_width="wrap_content"
+	                android:layout_height="wrap_content"
+	                android:layout_gravity="top|right"
+	                android:gravity="top|right"
+	                android:paddingLeft="@dimen/paddinglefttemp"
+	                android:text="@string/DefaultTemperature" />
+
+	           <TextView
+	               android:id="@+id/mintemp"
+	               style="@style/LowTextDark"
+	               android:layout_width="wrap_content"
+	               android:layout_height="fill_parent"
+	               android:layout_gravity="bottom|right"
+	               android:gravity="bottom|right"
+	               android:paddingLeft="@dimen/paddinglefttemp"
+	               android:paddingTop="@dimen/paddinglefttemp"
+	               android:text="@string/DefaultTemperature" />
+	
+            </LinearLayout>
+<!-- 
+            <Space
+                android:layout_width="20sp"
+                android:layout_height="match_parent" />
+ -->
+
+			<ImageView
+			    android:id="@+id/humicon"
+			    android:layout_width="wrap_content"
+			    android:layout_height="match_parent"
+			    android:layout_gravity="center"
+			    android:adjustViewBounds="true"
+			    android:gravity="center"
+			    android:maxHeight="@dimen/wbigtext"
+			    android:paddingLeft="@dimen/wbigtext"
+			    android:paddingRight="@dimen/paddinglefttemp"
+			    android:scaleType="fitCenter"
+			    android:src="@drawable/hum_icon_dark" />
+
+            <TextView
+                android:id="@+id/humval"
+                style="@style/MainValDark"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:gravity="right|center"
+                android:text="@string/DefaultHumidity"
+                android:textSize="@dimen/wbigtext" />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:orientation="vertical" >
+
+            <TextView
+                android:id="@+id/maxhum"
+                style="@style/HighTextDark"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="top|right"
+                android:gravity="top|right"
+                android:paddingLeft="@dimen/paddinglefttemp"
+                android:text="@string/DefaultHumidity" />
+
+<TextView
+    android:id="@+id/minhum"
+    style="@style/LowTextDark"
+    android:layout_width="wrap_content"
+    android:layout_height="fill_parent"
+    android:layout_gravity="top|right"
+    android:gravity="bottom|right"
+    android:paddingLeft="@dimen/paddinglefttemp"
+    android:paddingTop="@dimen/paddinglefttemp"
+    android:text="@string/DefaultHumidity"
+    android:textColor="#0099CC" />
+
+            </LinearLayout>
+
+<LinearLayout
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:layout_gravity="right"
+    android:gravity="right" >
+
+            <ProgressBar
+                android:id="@+id/progressBar1"
+                style="?android:attr/progressBarStyleSmall"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="right"
+                android:visibility="invisible" />
+
+            <TextView
+                android:id="@+id/lastupd"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="bottom|right"
+                android:text="@string/DefaultLastUpdate"
+                android:textColor="#808080"
+                android:textSize="@dimen/mini" />
+
+        </LinearLayout>
+        
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+</LinearLayout>
