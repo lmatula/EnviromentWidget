@@ -284,9 +284,13 @@ public class EnvWidget extends AppWidgetProvider {
 	    /** The system calls this to perform work in the UI thread and delivers
 	      * the result from doInBackground() */
 	    protected void onPostExecute(Enviroment result) {
-	        doDraw(result);
-            doTempNotification(result);
-            doHumidityNotification(result);
+            if (!result.equals(new Enviroment())) {
+                doDraw(result);
+                doTempNotification(result);
+                doHumidityNotification(result);
+            }else {
+                Log.d(this.toString(),"No result");
+            }
 	    }
 	}
 

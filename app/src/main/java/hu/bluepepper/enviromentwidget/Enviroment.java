@@ -20,8 +20,36 @@ public class Enviroment {
 		this.humMin = minHum;
 		this.humMax = maxHum;
 	}
-	
-	public float getTemp() {
+
+    @Override
+    public boolean equals(Object o) {
+        if (this == o) return true;
+        if (o == null || getClass() != o.getClass()) return false;
+
+        Enviroment that = (Enviroment) o;
+
+        if (Float.compare(that.hum, hum) != 0) return false;
+        if (Float.compare(that.humMax, humMax) != 0) return false;
+        if (Float.compare(that.humMin, humMin) != 0) return false;
+        if (Float.compare(that.temp, temp) != 0) return false;
+        if (Float.compare(that.tempMax, tempMax) != 0) return false;
+        if (Float.compare(that.tempMin, tempMin) != 0) return false;
+
+        return true;
+    }
+
+    @Override
+    public int hashCode() {
+        int result = (temp != +0.0f ? Float.floatToIntBits(temp) : 0);
+        result = 31 * result + (hum != +0.0f ? Float.floatToIntBits(hum) : 0);
+        result = 31 * result + (humMin != +0.0f ? Float.floatToIntBits(humMin) : 0);
+        result = 31 * result + (humMax != +0.0f ? Float.floatToIntBits(humMax) : 0);
+        result = 31 * result + (tempMin != +0.0f ? Float.floatToIntBits(tempMin) : 0);
+        result = 31 * result + (tempMax != +0.0f ? Float.floatToIntBits(tempMax) : 0);
+        return result;
+    }
+
+    public float getTemp() {
 		return temp;
 	}
 	public void setTemp(float temp) {
